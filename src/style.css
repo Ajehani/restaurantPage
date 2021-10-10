@@ -1,0 +1,57 @@
+body{
+    /* height: 100rem; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url('./restaurant.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+
+}
+img{
+    width:7rem;
+    height:10rem;
+    margin: 0 0 0 30%;
+}
+footer{
+    padding:1rem;
+    margin: 0 40%;
+    background-color:rgba(0,0,0,.5);
+    color: rgb(255, 255, 255) !important;
+    position:fixed;
+    bottom:0;
+}
+header{
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+nav{
+    display:flex;
+    justify-content: center;
+    background-color:rgba(0,0,0,.5);
+}
+.nav{
+    display:inline;
+    padding: 3rem;
+    margin: 5rem 0 0 0 ;
+    color:rgb(249, 249, 254);
+    font-size: 1.5rem;
+}
+a:visited{
+    color:white;
+    text-decoration:none;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+#content{
+    background-color:rgba(0,0,0,.5);
+    margin:5rem 0 0 0;
+    color:white;
+    margin: 5rem auto;
+    width:50%;
+}
