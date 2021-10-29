@@ -1,25 +1,54 @@
+@keyframes pls{
+    from {}
+    to {transform:translateY(-10%);}
+}
 body{
-    /* height: 100rem; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background: url('./restaurant.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: rgb(255, 255, 255);
+}
+#logo{
+    width:10rem;
+    height:10rem;
+    margin: 0 12% 0 0;
+}
+#menu{
+    display: grid;
+    gap: 3rem;
+    background-color:rgba(0,0,0,.5);
+    grid-template-columns: repeat(2,1fr);
+    color:white;
+    margin: 5rem auto;
+    width:50%; 
+}
+.menuPics{
+    width:100%;
+    height:20rem;
+    /* border: 3px solid blanchedalmond; */
+}
+.menu-items{
+    margin: 0 0 10rem 0;
+    background-color:rgba(0,0,0,.5);
+    border: 3px solid blanchedalmond;
 
 }
-img{
-    width:7rem;
-    height:10rem;
-    margin: 0 0 0 30%;
+.menu-items:hover{
+    background-color:rgba(114, 111, 111, 0.5);
+
 }
 footer{
+    text-align: center;
     padding:1rem;
-    margin: 0 40%;
     background-color:rgba(0,0,0,.5);
     color: rgb(255, 255, 255) !important;
     position:fixed;
     bottom:0;
+    width:100%;
+}
+span{
+    font-style:italic;
 }
 header{
     font-size: 2rem;
@@ -30,13 +59,26 @@ nav{
     display:flex;
     justify-content: center;
     background-color:rgba(0,0,0,.5);
+    height: 10rem;
 }
 .nav{
+    font-family: Georgia;
     display:inline;
-    padding: 3rem;
-    margin: 5rem 0 0 0 ;
+    margin: 5rem 0 0 2rem;
     color:rgb(249, 249, 254);
     font-size: 1.5rem;
+    text-decoration: none;
+    background-color:rgba(0,0,0,.5);
+    width:6rem;
+    height:3rem; 
+    border:none;
+}
+.nav:hover{
+    animation:pls 0.7s;
+    animation-direction:alternate;
+}
+.nav.active{
+    border-bottom: 4px solid white;
 }
 a:visited{
     color:white;
@@ -49,9 +91,9 @@ a:hover{
     text-decoration:underline;
 }
 #content{
+    text-align: center;
     background-color:rgba(0,0,0,.5);
     margin:5rem 0 0 0;
     color:white;
     margin: 5rem auto;
-    width:50%;
 }
