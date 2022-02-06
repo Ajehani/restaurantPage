@@ -17,8 +17,7 @@ About.setAttribute('id',"About")
 let array=[Home,Menu,About]
 for(let i=0;i<=2;i++){
     nav.appendChild(array[i])
-    array[i].setAttribute('class','nav')
-}
+    array[i].setAttribute('class','nav')}
 let footer=document.createElement('footer')
 document.body.appendChild(footer)
 Home.textContent="Home"
@@ -31,16 +30,15 @@ import { createAbout } from './about';
 footer.innerHTML="<a href='https://github.com/Ajehani'>More Content</a>"
 array.forEach(element=>element.addEventListener('click',()=>{
     array.forEach(el=>el.classList.remove('nav', 'active'))
-    array.forEach(el=>el===element?{}:el.classList.add('nav'))
-    element.classList.add("nav","active")
+    array.forEach(el=>el===element.classList.add("nav","active")?{}:el.classList.add('nav'));
     if(Home.matches(".nav.active")){
         content.textContent="This is a x-men themed restaurant, prolly the first ever. Enjoy."
     }
     if(Menu.matches(".nav.active")){
-        createMenu()
+        createMenu();
     }
     if(About.matches(".nav.active")){
-        createAbout()
+        createAbout();
     }
 }))
 window.addEventListener('load',()=>{

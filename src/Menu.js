@@ -10,14 +10,10 @@ let createMenu=()=>{
     content.setAttribute('style','width:100%;')
     let makeThePictures=()=>{
         const food=[xburger,cyclopsSmores,wolverineChips,rogueSandwich,icemanCocktails,wolverineDiet]
-        let f1=new Image()
-        let f2=new Image()
-        let f3=new Image()
-        let f4=new Image()
-        let f5=new Image()
-        let f6=new Image()
+        let f1,f2,f3,f4,f5,f6
         let label=[f1,f2,f3,f4,f5,f6]
         for(let i=0;i<6;i++){
+            label[i]=new Image()
             label[i].src=food[i]
             label[i].setAttribute('id',`label${i+1}`)
             label[i].setAttribute('class',`menuPics`)
@@ -54,7 +50,25 @@ let createMenu=()=>{
     pArray[3].innerHTML="Just a regular sandwich<br> $10"
     pArray[4].innerHTML="I'll allow it<br> $5"
     pArray[5].innerHTML="A Hugh JackMan Approved Meal Plan<br> $10,000"
-
-
 }
 export {createMenu};
+
+
+// let vals=collection.map(el=>el[Object.keys(el)])
+  // console.log(vals)
+// let arr=[]
+//   for(let i=0;i<collection.length;i++){
+//     console.log(collection[i])
+//     for(let j in collection[i]){
+//       console.log(collection[i][j])
+//       for(let k in source){
+//         if(source[k]===collection[i][j] && k===j){
+//           console.log("dis k?"+k)
+//           arr.push(source[indexOf(k)])
+//         }
+//         console.log(source[k],k)
+//       }
+//     }
+//   }
+//   console.log(arr)
+//   return arr
